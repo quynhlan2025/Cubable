@@ -1,9 +1,9 @@
 from src.pages.login import login_page
 from src.utils import logger, common
-from tests.base_test import BaseTest
+from tests import MasterTest
 
 
-class LoginTest(BaseTest):
+class LoginTest(MasterTest):
 
     def test_login_successful(self):
         # Test data
