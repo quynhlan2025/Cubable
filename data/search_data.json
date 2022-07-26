@@ -1,0 +1,7 @@
+{
+    "tc01": {
+        "title": "Verify the search on Home page",
+        "key_search": "neptune blue"
+
+    }
+}
