@@ -26,5 +26,5 @@
   pytest tests/search/test_search.py --alluredir=allure-results
   allure open allure-reports
   ```
-cho # oxstreet
-# oxstreet
+cho # cubable
+# cubable
