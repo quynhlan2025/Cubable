@@ -5,7 +5,7 @@ from src.utils import common
 from tests import MasterTest
 
 
-class BoardTest(MasterTest):
+class BoardItemTest(MasterTest):
 
     def test_add_new_board(self):
         collection_page.click_on_collection_icon()
@@ -18,9 +18,16 @@ class BoardTest(MasterTest):
         common.sleep(2)
         board_item_page.enter_item_name("item name123:")
         common.sleep(2)
-        assert board_item_page.is_column_diplayed("item name:") == True
-        common.sleep(2)
+        assert board_item_page.is_field_value_displayed("item name:") == True
+        board_item_page.click_on_add_column_icon()
+        common.sleep(5)
+        board_item_page.click_on_field_type()
+        common.sleep(1)
+        board_item_page.enter_field_name("Textbox")
+        board_item_page.enter_field_description("Textbox")
+        board_item_page.click_on_create_button()
+        common.sleep(1)
+        assert board_item_page.is_new_field_isdisplayed("Textbox")
+        common.sleep(1)
+
         pass
-
-
-pass
