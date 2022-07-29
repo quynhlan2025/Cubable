@@ -5,6 +5,7 @@ from src.utils import logger
 
 class BasePage:
 
+
     def go_to_url(self, urL):
         pass
 
@@ -12,3 +13,4 @@ class BasePage:
         logger.info(f"Select dropdown '{name}' with value '{option_value}'")
         select = Select(element)
         select.select_by_visible_text(option_value)
+
